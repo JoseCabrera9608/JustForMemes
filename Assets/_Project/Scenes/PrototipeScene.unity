@@ -119,6 +119,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &43455496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1784621687}
+    m_Modifications:
+    - target: {fileID: 100000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_Name
+      value: Airport_Building01_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+--- !u!4 &43455497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
+  m_PrefabInstance: {fileID: 43455496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &119646767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -196,7 +258,7 @@ GameObject:
   - component: {fileID: 169623273}
   - component: {fileID: 169623274}
   m_Layer: 0
-  m_Name: E-JavierPrado
+  m_Name: E-Canada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 169623272}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -233,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6411b389aa2741a9840d278e91228ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.Station
-  displayName: JavierPrado
+  displayName: Canada
   size: 0
   isCentral: 0
 --- !u!1 &184647547
@@ -880,7 +942,7 @@ GameObject:
   - component: {fileID: 512943945}
   - component: {fileID: 512943946}
   m_Layer: 0
-  m_Name: E-Canada
+  m_Name: E-PlazaFlores
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,9 +978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6411b389aa2741a9840d278e91228ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.Station
-  displayName: Canada
-  size: 0
-  isCentral: 0
+  displayName: PlazaFlores
+  size: 1
+  isCentral: 1
 --- !u!1001 &671765483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -945,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -175.8
+      value: -262.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1472,6 +1534,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
   road: {fileID: 1595336380}
   stopId: JP-N1
+--- !u!1 &1260100413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1260100414}
+  - component: {fileID: 1260100415}
+  m_Layer: 0
+  m_Name: ParaderoSur1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1260100414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260100413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.03, y: 0, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1784621687}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260100415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260100413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-S1
 --- !u!1 &1260752755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalScale.z
-      value: 26.346485
+      value: 32.590603
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1595,7 +1703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -144.0857
+      value: -231.4887
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1955,7 +2063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalScale.z
-      value: 26.346485
+      value: 32.590603
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1967,7 +2075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -144.0857
+      value: -231.4887
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd65707c1d8a7f647b32e29d30d57961, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2069,6 +2177,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
   m_PrefabInstance: {fileID: 1508657959}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1531252980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531252981}
+  - component: {fileID: 1531252982}
+  m_Layer: 0
+  m_Name: ParaderoNorte2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531252981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531252980}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.5, y: 0, z: 16.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1784621687}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531252982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531252980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-N2
 --- !u!1001 &1536148001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2466,6 +2620,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
   m_PrefabInstance: {fileID: 1742436917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1784621685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784621687}
+  - component: {fileID: 1784621686}
+  m_Layer: 0
+  m_Name: E-JavierPrado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1784621686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784621685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6411b389aa2741a9840d278e91228ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.Station
+  displayName: JavierPrado
+  size: 1
+  isCentral: 1
+--- !u!4 &1784621687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784621685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -174.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 43455497}
+  - {fileID: 1905717507}
+  - {fileID: 1260100414}
+  - {fileID: 1531252981}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890810604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2806,52 @@ Transform:
   - {fileID: 1554115263}
   m_Father: {fileID: 1041174809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1905717506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905717507}
+  - component: {fileID: 1905717508}
+  m_Layer: 0
+  m_Name: ParaderoNorte1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905717507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905717506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.5, y: 0, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1784621687}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905717508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905717506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-N1
 --- !u!1001 &1979163079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2954,6 +3205,7 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 2053855541}
+  - {fileID: 1784621687}
   - {fileID: 169623273}
   - {fileID: 512943945}
   - {fileID: 1041174809}
