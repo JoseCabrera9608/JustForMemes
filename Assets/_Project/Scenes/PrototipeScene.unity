@@ -194,6 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169623273}
+  - component: {fileID: 169623274}
   m_Layer: 0
   m_Name: E-JavierPrado
   m_TagString: Untagged
@@ -216,8 +217,55 @@ Transform:
   m_Children:
   - {fileID: 1500324730}
   - {fileID: 1223039566}
+  - {fileID: 1575258127}
   - {fileID: 1095179659}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &169623274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169623272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6411b389aa2741a9840d278e91228ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.Station
+  displayName: JavierPrado
+  size: 0
+  isCentral: 0
+--- !u!1 &184647547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184647548}
+  m_Layer: 0
+  m_Name: WP_00
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184647548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184647547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.85, y: 0, z: -180}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1595336381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &236307846
 PrefabInstance:
@@ -615,6 +663,146 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &415962609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415962613}
+  - component: {fileID: 415962612}
+  - component: {fileID: 415962611}
+  - component: {fileID: 415962610}
+  m_Layer: 0
+  m_Name: BUS_SYSTEM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &415962610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415962609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94ca1f54ad3467ea7fbfadf9a402b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Routes.RouteManager
+  pool: {fileID: 415962611}
+  traffic: {fileID: 415962612}
+  spawnDistance: 8
+  spawnSpeed: 6
+  routes:
+  - route:
+      routeName: A
+      service: 0
+      road: {fileID: 1595336380}
+      stops:
+      - {fileID: 1223039567}
+      - {fileID: 1475860035}
+      boardingTimeMultiplier: 3
+      debugColor: {r: 1, g: 0.55, b: 0.1, a: 1}
+    dispatchInterval: 14
+    firstDispatchDelay: 0
+    maxActiveBuses: 3
+    busStatsOverride: {fileID: 0}
+  - route:
+      routeName: B
+      service: 0
+      road: {fileID: 1595336380}
+      stops:
+      - {fileID: 1095179660}
+      - {fileID: 1014546234}
+      boardingTimeMultiplier: 1
+      debugColor: {r: 0.2, g: 0.8, b: 1, a: 1}
+    dispatchInterval: 14
+    firstDispatchDelay: 5
+    maxActiveBuses: 3
+    busStatsOverride: {fileID: 0}
+  - route:
+      routeName: SX
+      service: 1
+      road: {fileID: 1595336380}
+      stops:
+      - {fileID: 1014546234}
+      boardingTimeMultiplier: 1
+      debugColor: {r: 1, g: 0.2, b: 1, a: 1}
+    dispatchInterval: 20
+    firstDispatchDelay: 9
+    maxActiveBuses: 2
+    busStatsOverride: {fileID: 0}
+  - route:
+      routeName: C-Lenta
+      service: 0
+      road: {fileID: 1595336380}
+      stops:
+      - {fileID: 1095179660}
+      boardingTimeMultiplier: 3
+      debugColor: {r: 1, g: 0.9, b: 0.2, a: 1}
+    dispatchInterval: 22
+    firstDispatchDelay: 2
+    maxActiveBuses: 2
+    busStatsOverride: {fileID: 0}
+  logBoarding: 0
+--- !u!114 &415962611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415962609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27ea2fdc8d54fb1b977cb4372a8e233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Pooling.BusPool
+  prefab: {fileID: 6791447445327671255, guid: ea06d754d8932eb489a516e593e56262, type: 3}
+  prewarmCount: 12
+  maxPoolSize: 64
+--- !u!114 &415962612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415962609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693357eed4a64e5982d1f9aef211d79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Traffic.BusTrafficManager
+  rules:
+    laneReturnDistance: 60
+    preferExpressLaneWhenFar: 1
+    detectionRange: 80
+    mergeMargin: 1
+    laneDecisionInterval: 0.2
+    minTimeBetweenLaneChanges: 2
+    laneOccupancyFactor: 0.75
+    stoppedSpeedThreshold: 1
+    maxSimulationStep: 0.033333335
+    maxSubSteps: 4
+--- !u!4 &415962613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415962609}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.45, y: 0, z: -142.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &456089849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -690,6 +878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512943945}
+  - component: {fileID: 512943946}
   m_Layer: 0
   m_Name: E-Canada
   m_TagString: Untagged
@@ -715,6 +904,87 @@ Transform:
   - {fileID: 1014546233}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &512943946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512943944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6411b389aa2741a9840d278e91228ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.Station
+  displayName: Canada
+  size: 0
+  isCentral: 0
+--- !u!1001 &671765483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1041174809}
+    m_Modifications:
+    - target: {fileID: 100000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_Name
+      value: U_Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5186677
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -175.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+--- !u!4 &671765484 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+  m_PrefabInstance: {fileID: 671765483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &747083456
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +1208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1014546233}
+  - component: {fileID: 1014546234}
   m_Layer: 0
   m_Name: ParaderoNorte2
   m_TagString: Untagged
@@ -960,6 +1231,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 512943945}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014546234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014546232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: CA-N2
 --- !u!1 &1041174808
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1278,9 @@ Transform:
   - {fileID: 1897723731}
   - {fileID: 1683254931}
   - {fileID: 1890810605}
+  - {fileID: 1595336381}
+  - {fileID: 1536148002}
+  - {fileID: 671765484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1095179658
@@ -1004,6 +1292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1095179659}
+  - component: {fileID: 1095179660}
   m_Layer: 0
   m_Name: ParaderoNorte2
   m_TagString: Untagged
@@ -1025,6 +1314,51 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 169623273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095179660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095179658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-N2
+--- !u!1 &1165091158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165091159}
+  m_Layer: 0
+  m_Name: WP_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1165091159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165091158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.85, y: 0, z: 190}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1595336381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1176374444
 PrefabInstance:
@@ -1101,6 +1435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1223039566}
+  - component: {fileID: 1223039567}
   m_Layer: 0
   m_Name: ParaderoNorte1
   m_TagString: Untagged
@@ -1122,6 +1457,51 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 169623273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223039567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223039565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-N1
+--- !u!1 &1260752755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1260752756}
+  m_Layer: 0
+  m_Name: WP_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1260752756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260752755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.85, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1595336381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1409699339
 PrefabInstance:
@@ -1396,6 +1776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1475860034}
+  - component: {fileID: 1475860035}
   m_Layer: 0
   m_Name: ParaderoNorte1
   m_TagString: Untagged
@@ -1418,6 +1799,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 512943945}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475860035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475860033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: CA-N1
 --- !u!1001 &1477079382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1674,6 +2069,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: db59141da6fe9b74caf00ba920d5d0ee, type: 3}
   m_PrefabInstance: {fileID: 1508657959}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1536148001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1041174809}
+    m_Modifications:
+    - target: {fileID: 100000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_Name
+      value: U_Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5186677
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.667297
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 219.50145
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+--- !u!4 &1536148002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
+  m_PrefabInstance: {fileID: 1536148001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1554115262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1740,6 +2201,104 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e0fc381a19ed679439cbb451e4ddb067, type: 3}
   m_PrefabInstance: {fileID: 1554115262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1575258126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575258127}
+  - component: {fileID: 1575258128}
+  m_Layer: 0
+  m_Name: ParaderoSur1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575258127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575258126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.03, y: 0, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 169623273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1575258128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575258126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217858a575840099e91744ae7690b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Stations.BusStop
+  road: {fileID: 1595336380}
+  stopId: JP-S1
+--- !u!1 &1595336379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595336381}
+  - component: {fileID: 1595336380}
+  m_Layer: 0
+  m_Name: RoadPath_North
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1595336380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595336379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5134e03ccd474fe4a8aafb33840089b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FixMyCity.Runtime::FixMyCity.Roads.RoadPath
+  waypoints: []
+  leftLaneOffset: -3.4
+  rightLaneOffset: 3.4
+  leftLaneSpeedLimit: 10
+  rightLaneSpeedLimit: 15
+--- !u!4 &1595336381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595336379}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 184647548}
+  - {fileID: 1260752756}
+  - {fileID: 1165091159}
+  m_Father: {fileID: 1041174809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1626159631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1953,6 +2512,10 @@ PrefabInstance:
     - target: {fileID: 4440870191474971909, guid: ea06d754d8932eb489a516e593e56262, type: 3}
       propertyPath: m_Name
       value: BusPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440870191474971909, guid: ea06d754d8932eb489a516e593e56262, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6465658149861507931, guid: ea06d754d8932eb489a516e593e56262, type: 3}
       propertyPath: m_Name
@@ -2330,6 +2893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BusPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4440870191474971909, guid: ea06d754d8932eb489a516e593e56262, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6465658149861507931, guid: ea06d754d8932eb489a516e593e56262, type: 3}
       propertyPath: m_Name
       value: BusVisual
@@ -2393,3 +2960,4 @@ SceneRoots:
   - {fileID: 747083457}
   - {fileID: 1715664280633344768}
   - {fileID: 1892315373}
+  - {fileID: 415962613}
